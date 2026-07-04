@@ -23,6 +23,13 @@ A collection of web scraping projects built with Python, Playwright, and Stealth
 - Extracts: title, price, stock, description
 - Saves data to `books.csv`
 
+### 4. Quotes Scraper (Pagination)
+- Scrapes all quotes from [quotes.toscrape.com](https://quotes.toscrape.com)
+- Navigates through all pages using "Next" button
+- Extracts: quote text and author
+- Saves data to `quotes_all.json`
+- Includes logging and error handling
+
 ## 🛠️ Technologies Used
 
 - Python 3.9+
