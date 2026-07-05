@@ -1,6 +1,6 @@
 # Web Scraping Portfolio
 
-A collection of web scraping projects built with Python, Playwright, and Stealth mode.
+A collection of web scraping projects built with Python, Playwright, Stealth mode, and asynchronous API requests.
 
 ## 🚀 Projects
 
@@ -30,14 +30,31 @@ A collection of web scraping projects built with Python, Playwright, and Stealth
 - Saves data to `quotes_all.json`
 - Includes logging and error handling
 
+### 5. API Parser: JSONPlaceholder Users
+- Fetches user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com) API
+- Demonstrates asynchronous HTTP requests with `aiohttp`
+- Extracts: name, email, city
+- Saves data to `users.json`
+- Uses `fake_useragent` for request masking
+
+### 6. Wildberries Advanced Scraper
+- Scrapes product data from [Wildberries.ru](https://www.wildberries.ru) (Calvin Klein)
+- Extracts: product name, price, delivery date, link, article
+- Uses Playwright Stealth and random delays
+- Includes comprehensive logging and error handling
+- Saves data to `config.json`
+
 ## 🛠️ Technologies Used
 
 - Python 3.9+
 - Playwright
 - Playwright Stealth
+- aiohttp (asynchronous HTTP requests)
 - BeautifulSoup (optional)
 - Pandas
 - asyncio
+- fake_useragent
+- JSON
 
 ## 📦 Installation
 
