@@ -44,17 +44,27 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Includes comprehensive logging and error handling
 - Saves data to `config.json`
 
+### 7. Wildberries API Scraper (iPhone 17 Pro Max)
+- Scrapes product data from Wildberries via internal API
+- Extracts: product name, price, article
+- Uses `requests` with cookies and headers to mimic real browser
+- Includes data cleaning, sorting by price (ascending/descending)
+- Exports data to Excel (`.xlsx`)
+- Demonstrates reverse-engineering of internal API endpoints
+
 ## 🛠️ Technologies Used
 
 - Python 3.9+
 - Playwright
 - Playwright Stealth
 - aiohttp (asynchronous HTTP requests)
+- Requests (synchronous HTTP)
 - BeautifulSoup (optional)
 - Pandas
 - asyncio
 - fake_useragent
 - JSON
+- Excel (openpyxl)
 
 ## 📦 Installation
 
