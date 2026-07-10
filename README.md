@@ -2,6 +2,8 @@
 
 A collection of web scraping projects built with Python, Playwright, Stealth mode, and asynchronous API requests.
 
+---
+
 ## 🚀 Projects
 
 ### 1. Quotes Scraper (Infinite Scroll)
@@ -52,6 +54,18 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Exports data to Excel (`.xlsx`)
 - Demonstrates reverse-engineering of internal API endpoints
 
+### 8. Wildberries Interactive Parser
+- Interactive Wildberries parser with user input
+- Search query and product count are set via console
+- Extracts: product name, article, price, brand, characteristics
+- Uses internal Wildberries API with browser-like headers
+- Saves data to Excel (`.xlsx`)
+- Full logging of all steps
+- Error handling for missing characteristics
+- Ready for real-world freelance orders
+
+---
+
 ## 🛠️ Technologies Used
 
 - Python 3.9+
@@ -65,6 +79,8 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - fake_useragent
 - JSON
 - Excel (openpyxl)
+
+---
 
 ## 📦 Installation
 
