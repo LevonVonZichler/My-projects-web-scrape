@@ -64,12 +64,25 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Error handling for missing characteristics
 - Ready for real-world freelance orders
 
+  ### 9. Async Parser with aiohttp + SQLite
+
+- Scrapes data from [JSONPlaceholder](https://jsonplaceholder.typicode.com) API
+- Uses `aiohttp` for asynchronous HTTP requests
+- Saves data to SQLite database (`posts.db`)
+- Creates table with fields: `id`, `userId`, `title`, `body`
+- Handles errors and logs progress
+- Demonstrates clean separation of concerns (fetching → saving → logging)
+- Ready for integration into larger data pipelines
+
+**Technologies:** Python, aiohttp, asyncio, SQLite3, logging
+
 ---
 
 ## 🛠️ Technologies Used
 
 - Python 3.9+
 - Playwright
+- SQLite3
 - Playwright Stealth
 - aiohttp (asynchronous HTTP requests)
 - Requests (synchronous HTTP)
