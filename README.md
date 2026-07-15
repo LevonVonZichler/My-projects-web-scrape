@@ -76,7 +76,7 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 
 **Technologies:** Python, aiohttp, asyncio, SQLite3, logging
 
-### 10. Weather Parser (Gismeteo)
+### 10. Weather Parser (Gismeteo) + SQLite Storage
 
 - Parses weather data from [Gismeteo](https://www.gismeteo.ru/)
 - Interactive search: user enters a city name
@@ -86,10 +86,13 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
   - Current temperature
   - Wind speed (m/s)
   - Atmospheric pressure
-- Uses Playwright Stealth + Fake User-Agent to avoid detection
+- **Saves weather data to SQLite database** (`weather.db`)
+- Creates table with fields: `City`, `Temperature`, `Wind_speed`, `Pressure`
 - Handles errors gracefully (city not found, index out of range, missing data)
+- Uses Playwright Stealth + Fake User-Agent to avoid detection
+- Ready for historical data analysis and monitoring
 
-**Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, asyncio, logging
+**Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, SQLite3, asyncio, logging
 
 ---
 
