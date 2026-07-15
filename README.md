@@ -107,6 +107,7 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - fake_useragent
 - JSON
 - Excel (openpyxl)
+- logging
 
 ---
 
