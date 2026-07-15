@@ -64,7 +64,7 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Error handling for missing characteristics
 - Ready for real-world freelance orders
 
-  ### 9. Async Parser with aiohttp + SQLite
+### 9. Async Parser with aiohttp + SQLite
 
 - Scrapes data from [JSONPlaceholder](https://jsonplaceholder.typicode.com) API
 - Uses `aiohttp` for asynchronous HTTP requests
@@ -75,6 +75,21 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Ready for integration into larger data pipelines
 
 **Technologies:** Python, aiohttp, asyncio, SQLite3, logging
+
+### 10. Weather Parser (Gismeteo)
+
+- Parses weather data from [Gismeteo](https://www.gismeteo.ru/)
+- Interactive search: user enters a city name
+- Displays list of matching cities with indices
+- User selects a city by number
+- Extracts and displays:
+  - Current temperature
+  - Wind speed (m/s)
+  - Atmospheric pressure
+- Uses Playwright Stealth + Fake User-Agent to avoid detection
+- Handles errors gracefully (city not found, index out of range, missing data)
+
+**Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, asyncio, logging
 
 ---
 
