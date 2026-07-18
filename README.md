@@ -94,6 +94,24 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 
 **Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, SQLite3, asyncio, logging
 
+### 11. Currency Rates Parser (CBR) + SQLite Storage
+
+- Parses currency exchange rates from the Central Bank of Russia website
+- Extracts data for all currencies displayed on the page
+- Collects for each currency:
+  - Currency name (Title)
+  - Current exchange rate (Cost)
+  - Rate change (Rost) with +/− sign
+- Saves data to SQLite database (`Kurs.db`)
+- Creates table with fields: `Title`, `Cost`, `Rost`
+- Uses Playwright Stealth + Fake User-Agent to avoid detection
+- Asynchronous parsing with Playwright for dynamic content
+- Full logging of all steps for debugging and monitoring
+- Handles errors gracefully (missing elements, page load issues)
+- Ready for integration into larger data pipelines
+
+**Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, SQLite3, asyncio, logging
+
 ---
 
 ## 🛠️ Technologies Used
