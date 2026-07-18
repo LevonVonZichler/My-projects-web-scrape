@@ -110,7 +110,26 @@ A collection of web scraping projects built with Python, Playwright, Stealth mod
 - Handles errors gracefully (missing elements, page load issues)
 - Ready for integration into larger data pipelines
 
-**Technologies:** Python, Playwright, Playwright Stealth, Fake-UserAgent, SQLite3, asyncio, logging
+**Technologies:** Python, Playwright, Playwright Stealth, SQLite3, asyncio, logging
+
+### 12. Currency Monitor (CBR) – Real-Time Exchange Tracker
+
+- Monitors currency exchange rates from the Central Bank of Russia website
+- Runs continuously in a loop, checking for rate changes
+- Compares current rates with previous values and logs only changes
+- Displays changes in format: USD: 87.50 → 87.80
+- Saves all historical data to SQLite database (Kurs.db)
+- Table fields: Title, Cost, Rost
+- Uses Playwright Stealth + Fake User-Agent to avoid detection
+- Fully asynchronous with asyncio
+- Adjustable delay between checks (default: 60 seconds)
+- Clean logging: shows only important events (rate changes, errors)
+- Designed for long-term monitoring and trend analysis
+- Easy to extend: add Telegram notifications, alerts, or CSV export
+
+**Technologies:** Python, Playwright, Playwright Stealth, SQLite3, asyncio, logging
+
+
 
 ---
 
